@@ -2,6 +2,7 @@
 import { marked } from 'marked';
 import Button from './Button.astro';
 import siteConfig from '../data/site-config';
+import { Image } from 'astro:assets';
 
 const hero = siteConfig.hero;
 const parsedText = hero?.text ? marked.parse(hero.text) : '';
@@ -13,7 +14,15 @@ const parsedText = hero?.text ? marked.parse(hero.text) : '';
             {hero.title && <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight">{hero.title}</h1>}
             {hero.image?.src && (
                 <figure>
-                    <img class="object-cover object-center w-96 rounded-lg" src={hero.image.src} decoding="async" alt={hero.image.alt || ''} />
+                    <Image
+                        class="object-cover object-center w-96 rounded-lg"
+                        src={hero.image.src}
+                        width={384}
+                        height={384}
+                        quality={80}
+                        format="webp"
+                        alt={hero.image.alt || ''}
+                    />
                     {hero.image.caption && <figcaption class="mt-1.5 text-xs sm:text-sm">{hero.image.caption}</figcaption>}
                 </figure>
             )}
