@@ -1,0 +1,26 @@
+---
+import type { GetStaticPathsOptions, Page } from 'astro';
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Pagination from '../../components/Pagination.astro';
+import PublicationPreview from '../../components/PublicationPreview.astro';
+import siteConfig from '../../data/site-config';
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+    const publications = await getCollection('publications');
+    // Sort by year descending
+    publications.sort((a, b) => b.data.year - a.data.year);
+    return paginate(publications, { pageSize: 10 });
+}
+
+type Props = { page: Page<CollectionEntry<'publications'>> };
+
+const { page } = Astro.props;
+const publications = page.data;
+---
+
+<BaseLayout title="Publications" description="Academic publications and research papers" showHeader={false}>
+    <h1 class="mb-12 text-2xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">Publications</h1>
+    {publications.map((publication) => <PublicationPreview publication={publication} class="mb-10 sm:mb-12" />)}
+    <Pagination page={page} class="my-16 sm:my-24" />
+</BaseLayout>

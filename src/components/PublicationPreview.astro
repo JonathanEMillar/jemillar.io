@@ -1,0 +1,29 @@
+---
+import { type CollectionEntry } from 'astro:content';
+
+type Props = { publication: CollectionEntry<'publications'>; class?: string; headingLevel?: 'h2' | 'h3' };
+
+const { publication, class: className, headingLevel = 'h2' } = Astro.props;
+const { title, journal, year, authors, citation, doi } = publication.data;
+const TitleTag = headingLevel;
+---
+
+<div class:list={['group', className]}>
+    <div class="grow">
+        <TitleTag class="text-xl leading-tight font-serif font-medium sm:text-2xl">
+            {title}
+        </TitleTag>
+        <div class="mt-2 text-sm leading-normal">
+            <p class="italic">{authors.join(', ')}</p>
+            <p>{journal} ({year})</p>
+            <p class="text-gray-600 dark:text-gray-400">{citation}</p>
+            {
+                doi && (
+                    <a href={`https://doi.org/${doi}`} target="_blank" rel="noopener noreferrer" class="text-main hover:underline">
+                        DOI: {doi}
+                    </a>
+                )
+            }
+        </div>
+    </div>
+</div>
