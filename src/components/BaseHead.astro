@@ -7,9 +7,10 @@ export type Props = {
     description?: string;
     image?: { src: string; alt?: string };
     pageType?: 'website' | 'article';
+    heroImage?: { src: string; alt?: string };
 };
 
-const { description = '', image = siteConfig.image, pageType = 'website' } = Astro.props;
+const { description = '', image = siteConfig.image, pageType = 'website', heroImage } = Astro.props;
 const title = [Astro.props.title, siteConfig.title].filter(Boolean).join(' | ');
 const resolvedImage = image?.src
     ? {
@@ -88,4 +89,4 @@ function formatCanonicalURL(url: string | URL) {
 {resolvedImage?.alt && <meta name="twitter:image:alt" content={resolvedImage?.alt} />}
 
 <!-- Preload hero image -->
-{hero?.image?.src && <link rel="preload" as="image" href={hero.image.src} fetchpriority="high" />}
+{heroImage?.src && <link rel="preload" as="image" href={heroImage.src} fetchpriority="high" />}
