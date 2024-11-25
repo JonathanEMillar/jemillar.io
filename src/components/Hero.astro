@@ -21,6 +21,9 @@ const parsedText = hero?.text ? marked.parse(hero.text) : '';
                         height={384}
                         quality={80}
                         format="webp"
+                        loading="eager"
+                        decoding="sync"
+                        fetchpriority="high"
                         alt={hero.image.alt || ''}
                     />
                     {hero.image.caption && <figcaption class="mt-1.5 text-xs sm:text-sm">{hero.image.caption}</figcaption>}

@@ -86,3 +86,6 @@ function formatCanonicalURL(url: string | URL) {
 <meta property="twitter:description" content={description} />
 {resolvedImage?.src && <meta property="twitter:image" content={resolvedImage.src} />}
 {resolvedImage?.alt && <meta name="twitter:image:alt" content={resolvedImage?.alt} />}
+
+<!-- Preload hero image -->
+{hero?.image?.src && <link rel="preload" as="image" href={hero.image.src} fetchpriority="high" />}
