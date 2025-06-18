@@ -39,7 +39,7 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
     title: 'Johnny Millar',
-    subtitle: 'Clinician-Scientist | Chief of Staff, Learning Model of Life',
+    subtitle: 'Clinician-Scientist | Co-Founder, Multiscale Labs',
     description: 'Personal website of Johnny Millar',
     headerNavLinks: [
         {
@@ -85,7 +85,7 @@ const siteConfig: SiteConfig = {
     ],
     hero: {
         title: '',
-        text: "I'm **Johnny Millar**, a clinician-scientist working at the intersection of artificial intelligence and biology. Currently, I serve as Chief of Staff at the <a href='https://lml.ac.uk'>Learning Model of Life</a>, The University of Edinburgh. In addition, I am a Senior Research and <a href='https://https://gail.ed.ac.uk/'>Generative AI Lab</a> Fellow. Alongside my research work, I'm privileged to care for patients as an Honorary Consultant in Intensive Care Medicine at Glasgow's Queen Elizabeth University Hospital. Feel free to explore some of my endeavors at <a href='https://github.com/JustGoodUI/dante-astro-theme'>GitHub</a> or follow me on <a href='https://www.linkedin.com/in/jonathan-millar-274960318/'>LinkedIn</a>.",
+        text: "I'm **Johnny Millar**, a clinician-scientist working at the intersection of artificial intelligence and biology. Currently, I am a Senior Research and <a href='https://https://gail.ed.ac.uk/'>Generative AI Lab</a> Fellow at the University of Edinburgh. Alongside my research work, I'm privileged to care for patients as an Honorary Consultant in Intensive Care Medicine at Glasgow's Queen Elizabeth University Hospital. Most recently, I co-founded <a href='https://www.multiscalelabs.com'>Multiscale Labs</a>, a company that is building a platform for AI-driven drug discovery. Feel free to explore some of my endeavors at <a href='https://github.com/JustGoodUI/dante-astro-theme'>GitHub</a> or follow me on <a href='https://www.linkedin.com/in/jonathan-millar-274960318/'>LinkedIn</a>.",
         image: {
             src: '/hero.webp',
             alt: 'Portrait image of Johnny Millar'
