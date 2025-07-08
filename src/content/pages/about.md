@@ -6,11 +6,7 @@ seo:
 ---
 ## Dr Jonathan Millar
 
-I serve as Chief of Staff at the [Learning Model of Life](https://lml.ac.uk/), The University of Edinburgh and am a Senior Clinical Research Fellow at the University's Baillie-Gifford Pandemic Science Hub and of the Generative AI Lab. I practice clinical medicine as an Honorary Consultant in Intensive Care Medicine at the Queen Elizabeth University Hospital Glasgow. My career spans the realms of clinical practice, cutting-edge research, and technological innovation, driven by a passion for improving patient outcomes in critical care.
-
-## Learning Model of Life
-
-Founded in 2024, the Learning Model of Life is a cross-college initiative of The University of Edinburgh. It is a constituent of the University's Generative AI Lab (GAIL) and is supported by [EPCC](https://www.epcc.ed.ac.uk/), the UK's leading centre of Supercomputing and Data Science. Drawing on world-class talent from across the University, the Learning Model of Life aims to develop an autonomously-learning computational model of life.
+I am a Senior Clinical Research Fellow at the University of Edinburgh's [Baillie-Gifford Pandemic Science Hub](https://psh.ac.uk) and a [Generative AI Lab](https://gail.ed.ac.uk) Fellow. I practice clinical medicine as an Honorary Consultant in Intensive Care Medicine at the Queen Elizabeth University Hospital Glasgow. My career spans the realms of clinical practice, cutting-edge research, and technological innovation, driven by a passion for improving patient outcomes in critical care.
 
 ## Research Focus
 
@@ -18,7 +14,7 @@ My research interests lie at the exciting intersection of functional genomics, f
 
 ## Achievements and Impact
 
-With over 50 original articles published and more than 7,000 citations, my work has contributed to the field of critical care medicine. I’ve secured over £20 million in research funding and have been recognised with several awards, including an NHMRC Doctoral Fellowship.
+With over 50 original articles published and more than 7,500 citations, my work has contributed to the field of critical care medicine. I’ve secured over £20 million in research funding and have been recognised with several awards, including an NHMRC Doctoral Fellowship.
 
 ## Interdisciplinary Collaboration
 
